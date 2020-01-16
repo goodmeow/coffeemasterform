@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Coffee Master Class Exit Survey</h1>
+    <p id="description" class="description text-center">Terimakasih telah
+      mengikuti kelas Coffee master, mari bantu kita untuk meningkatkan kualitas
+       pembelajaran dengan mengisi survey dibawah ini.</p>
+  </header>
+
+<form id="survey-form" class="form-group">
+  <div class="form-group">
+    <label id="name-label" for="name">Nama Depan</label><br>
+    <input type="text" name="name" id="name" class="form-control"
+    placeholder="Nama depan"/><br>
+    <label id="name-label" for="name">Nama Belakang</label><br>
+    <input type="text" name="name" id="name" class="form-control"
+    placeholder="Nama belakang"/>
+  </div>
+  <div class="form-group">
+    <label id="worker-id-label" for="number">ID Number</label><br>
+    <input type="text" name="number" id="number" class="form-control"
+    placeholder="Nomor ID"/><br>
+    <label id="email-label" for="email">Email</label><br>
+    <input type="email" name="email" id="email" class="form-control"
+    placeholder="Example@mail.you" required/>
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number">Usia <span class="clue">(optional)
+    </span></label><br>
+    <input type="number" name="age" min="17" max="65" class="form-control"
+    placeholder="Usia" />
+  </div>
+  <div class="form-group">
+    <p>Apakah anda Part-time atau full-time worker?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+      <option disabled selected value>Pilih tipe kerja anda</option>
+      <option value="Full-time">Full-time</option>
+      <option value="part-time">Part-time</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>Apakah anda tertarik untuk melanjutkan kelas ini sampai Advanced
+    coffee master?</p>
+    <label>
+    <input type="radio" class="input-radio" name="user-select" value="yes"
+    checked/>ya</label>
+    <label>
+    <input type="radio" class="input-radio" name="user-select" value="no"
+    checked/>tidak</label>
+    <label>
+    <input type="radio" class="input-radio" name="user-select" value="definietly
+    checked">mungkin</label>
+  </div>
+  <div class="form-group">
+    <p>Bagian mana dari pelatihan ini yang anda ingin gali lebih dalam?</p>
+    <select id="dropdown" name="favourite" class="form-control" required>
+    <option disabled selected value>Pilih jawaban anda</option>
+    <option value="chapter-1">Chapter 1: History of Coffee</option>
+    <option value="chapter-2">Chapter 2: From seed to cup </option>
+    <option value="chapter-3">Chapter 3: Fairtrade Practice</option>
+    <option value="chapter-4">Chapter 4: Being a Good Coffee Master</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>Dari district berapa kamu?</p>
+    <select id="district-number" name="district" class="form-control"
+    required>
+    <option disabled selected value="District-number">Pilih sesuai dengan kamu
+    </option>
+    <option value="district-number">District 1</option>
+      <option value="district-number">District 2</option>
+        <option value="district-number">District 3</option>
+          <option value="district-number">District 4</option>
+            <option value="district-number">District 5</option>
+              <option value="district-number">District 6</option>
+                <option value="district-number">District 7</option>
+              </select>
+            </div>
+    <div class="form-group">
+      <p>Darimana kamu tau tentang coffee master class ini?<span>(Check all that
+        apply)</span></p>
+        <label>
+        <input name="channel" value="iMAP" type="checkbox" class="input-checkbox
+      ">iMAP</label>
+      <label>
+      <input name="channel" value="store" type="checkbox" class="input-checkbox
+    ">Store</label>
+    <label>
+    <input name="channel" value="sosmed" type="checkbox" class="input-checkbox
+  ">Sosmed</label>
+  <div class="form-group">
+    <p>Saran dan masukan untuk kelas hari ini?</p>
+    <textarea id="comments" name="comment" class="input-textarea" placeholder="
+    Jujur ya.."></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" id="button" class="submit-button">Submit</button>
+  </div>
+  </form>
+  </div>
+</html>
